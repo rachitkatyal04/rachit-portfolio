@@ -44,6 +44,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link
+          rel="icon"
+          href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='white'/><text x='50' y='70' font-size='60' font-weight='bold' text-anchor='middle' fill='black'>R</text></svg>"
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
