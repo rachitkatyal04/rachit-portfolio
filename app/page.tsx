@@ -6,6 +6,7 @@ import {
   LinkedinIcon,
   MailIcon,
   ArrowDownIcon,
+  FileIcon,
 } from "lucide-react";
 import Image from "next/image";
 import ProjectCard from "@/components/project-card";
@@ -128,6 +129,16 @@ export default function Home() {
             <ClientOnly fallback={<div className="w-9 h-9" />}>
               <ModeToggle />
             </ClientOnly>
+            <Button variant="outline" size="sm" asChild>
+              <a
+                href="/RachitKatyal_UpdatedResume.pdf"
+                download
+                className="flex items-center gap-2"
+              >
+                <FileIcon size={16} />
+                Resume
+              </a>
+            </Button>
             <Button variant="outline" size="sm" asChild>
               <a href="#contact">Contact Me</a>
             </Button>
